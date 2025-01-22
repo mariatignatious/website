@@ -16,7 +16,7 @@
         header {
             background: linear-gradient(90deg, #007BFF, #4CAF50);
             color: white;
-            padding: 1.5rem 0;
+            padding: 2rem 1rem;
             text-align: center;
         }
 
@@ -33,6 +33,7 @@
             background-color: #FF5722;
             padding: 1rem;
             text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
 
         nav a {
@@ -40,6 +41,7 @@
             margin: 0 1rem;
             text-decoration: none;
             font-weight: bold;
+            transition: color 0.3s;
         }
 
         nav a:hover {
@@ -47,7 +49,7 @@
         }
 
         section {
-            padding: 2rem;
+            padding: 2rem 1rem;
         }
 
         .container {
@@ -61,7 +63,8 @@
             border: 1px solid #ddd;
             border-radius: 8px;
             margin: 1.5rem 0;
-            padding: 1rem;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .skills ul, .contact ul {
@@ -79,6 +82,7 @@
             text-align: center;
             padding: 1rem 0;
             margin-top: 2rem;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
         }
 
         footer a {
@@ -90,18 +94,45 @@
             text-decoration: underline;
         }
 
-        @media (max-width: 600px) {
+        h2 {
+            color: #4CAF50;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            nav a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+
+            section {
+                padding: 1rem;
+            }
+
+            .skills, .events, .contact {
+                padding: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
             header h1 {
                 font-size: 1.5rem;
             }
 
             header p {
                 font-size: 0.9rem;
-            }
-
-            nav a {
-                display: block;
-                margin: 0.5rem 0;
             }
         }
     </style>
@@ -152,7 +183,7 @@
         <ul>
             <li>Email: <a href="mailto:mariatignatious@gmail.com">mariatignatious@gmail.com</a></li>
             <li>LinkedIn: <a href="https://linkedin/mariatignatious" target="_blank">linkedin/mariatignatious</a></li>
-            <li>GitHub: <a href="https://github.com/mariatignatious/io" target="_blank">mariatignatious/io</a></li>
+            <li>GitHub: <a href="https://github.com/mariatignatious" target="_blank">mariatignatious/io</a></li>
         </ul>
     </div>
 </section>
